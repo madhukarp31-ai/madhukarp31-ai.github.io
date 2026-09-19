@@ -465,16 +465,12 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <h2 class="cta-title">Have a cloud or <em>MLOps</em><br>challenge to solve?</h2>
   <p class="cta-sub">Whether you're designing a landing zone, fixing a broken ML pipeline, or building a Zero Trust strategy from scratch — let's talk about what's possible.</p>
   <div class="cta-row">
-    <a href="mailto:prasadmadhukar31@gmail.com?subject=Discovery%20Call%20Request%20-%20Cloud%20%26%20MLOps%20Consulting&body=Hi%20Madhukar%2C%0A%0AI%20would%20like%20to%20schedule%20a%20discovery%20call%20to%20discuss%20my%20cloud%2FMLOps%20requirements.%0A%0AName%3A%0ACompany%3A%0AProject%20Description%3A%0APreferred%20Time%3A%0A%0AThank%20you!" class="btn-primary">Book a Discovery Call</a>
+    <button data-cal-link="madhukar-prasad-ank4ea/discovery-call" data-cal-config='{"layout":"month_view"}' class="btn-primary" style="border:none;cursor:pointer;font:inherit">Book a Discovery Call</button>
     <a href="https://www.linkedin.com/in/madhukar-prasad-maddy-aa678586/" target="_blank" class="btn-ghost">Connect on LinkedIn</a>
   </div>
   <div class="subscribe-row">
     <p class="subscribe-label">Subscribe for new articles</p>
-    <form class="subscribe-form" action="https://formsubmit.co/prasadmadhukar31@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New newsletter subscriber" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="_honey" style="display:none" />
+    <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/madhukar" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/api/emails/embed-subscribe/madhukar','popupwindow','width=400,height=500')">
       <input type="email" name="email" placeholder="your@email.com" required />
       <button type="submit">Subscribe</button>
     </form>
@@ -492,5 +488,15 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
 </footer>
 
+<!-- Cal.com scheduling embed -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  Cal("ui", {
+    styles: {branding: {brandColor: "#000000"}},
+    hideEventTypeDetails: false,
+    layout: "month_view"
+  });
+</script>
 </body>
 </html>
