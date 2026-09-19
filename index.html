@@ -470,14 +470,16 @@ footer{padding:2.5rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
   <div class="subscribe-row">
     <p class="subscribe-label">Subscribe for new articles</p>
-    <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/madhukar" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/api/emails/embed-subscribe/madhukar','popupwindow','width=400,height=500')">
+    <form class="embeddable-buttondown-form subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/madhukar" method="post">
       <input type="email" name="email" placeholder="your@email.com" required />
+      <input type="hidden" value="1" name="embed" />
       <button type="submit">Subscribe</button>
     </form>
   </div>
 </section>
 
 <!-- FOOTER -->
+<script src="https://buttondown.com/js/embed.js"></script>
 <footer>
   <a href="#" class="foot-logo">MADHUKAR PRASAD<span>.</span></a>
   <p class="foot-copy">&copy; 2025 Madhukar Prasad &middot; All rights reserved</p>
